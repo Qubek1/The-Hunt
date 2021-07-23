@@ -79,6 +79,7 @@ public class UnitState : TurnState
             tile.visited = false;
             tile.Highlight(Color.black);
         }
+        enemiesTiles.Clear();
     }
 
     private void CheckForAttacks()

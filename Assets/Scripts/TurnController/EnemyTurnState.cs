@@ -166,7 +166,7 @@ public class EnemyTurnState : TurnState
                 tile.pathFindingRange = tilesToCheck.Peek().pathFindingRange - 1;
                 visitedTiles.Add(tile);
 
-                if (tile.unit != null && tile.unit.enemy == false)
+                if (tile.unit != null && tile.unit.enemy == false && tilesToCheck.Peek().unit == null)
                 {
                     ResetTiles(visitedTiles);
                     return tile.unit;

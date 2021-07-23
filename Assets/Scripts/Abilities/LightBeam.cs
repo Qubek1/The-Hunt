@@ -49,7 +49,7 @@ public class LightBeam : TurnState
         CheckMouse();
         if (Input.GetMouseButtonDown(0))
         {
-            if (turnmanager.currentMana > 0)
+            if (turnmanager.currentMana > 0 && HighlightedTiles.Contains(mouseTile))
             {
                 UseAbility();
             }

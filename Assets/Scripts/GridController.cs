@@ -6,7 +6,7 @@ public class GridController : MonoBehaviour
 {
     public Tile[,] TileGrid;
     public Vector2Int GridSize;
-    public GameObject TilesHolder, UnitsHolder;
+    public GameObject TilesHolder, UnitsHolder, EnemyUnitsHolder;
 
     private void Start()
     {
@@ -28,6 +28,14 @@ public class GridController : MonoBehaviour
     private void FindUnits()
     {
         foreach (Unit unit in UnitsHolder.GetComponentsInChildren<Unit>())
+        {
+            unit.ResetUnit();
+            Vector2Int unitGridPos = FindGridPos(unit.transform);
+            unit.gridPos = unitGridPos;
+            TileGrid[unitGridPos.x, unitGridPos.y].unit = unit;
+            unit.tile = TileGrid[unitGridPos.x, unitGridPos.y];
+        }
+        foreach (Unit unit in EnemyUnitsHolder.GetComponentsInChildren<Unit>())
         {
             unit.ResetUnit();
             Vector2Int unitGridPos = FindGridPos(unit.transform);

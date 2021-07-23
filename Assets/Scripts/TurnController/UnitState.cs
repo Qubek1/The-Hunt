@@ -65,6 +65,7 @@ public class UnitState : TurnState
         DemonUnit dUnit = (DemonUnit)unit;
         dUnit.ShowAbilityButton(false);
 
+        enemiesTiles.Clear();
         unit.transform.position -= new Vector3(0, 0.2f, 0);
         unit.tile.transform.position -= new Vector3(0, 0.2f, 0);
         if(mouseTile != null)

@@ -7,12 +7,6 @@ ModelImporter:
       74: -4449717305648701825
     second: Armature|0TPose
   - first:
-      74: 3219363372848806647
-    second: Armature|0TPose.002
-  - first:
-      74: 4312491750462162490
-    second: Armature|0TPose.004
-  - first:
       74: 4723146814002874508
     second: Armature|Attack
   - first:
@@ -24,27 +18,6 @@ ModelImporter:
   - first:
       74: 4106399916549189888
     second: Armature|Idle.001
-  - first:
-      74: 5788249748251098270
-    second: Armature.001|0TPose
-  - first:
-      74: -6409493236300281503
-    second: Armature.001|0TPose.002
-  - first:
-      74: -7101676727143012831
-    second: Armature.001|0TPose.004
-  - first:
-      74: -4405619503343681686
-    second: Armature.001|Attack
-  - first:
-      74: -2798659190488963628
-    second: Armature.001|Hit recive
-  - first:
-      74: 4699274299699868179
-    second: Armature.001|Idle
-  - first:
-      74: 5232870065568276905
-    second: Armature.001|Idle.001
   externalObjects: {}
   materials:
     materialImportMode: 2

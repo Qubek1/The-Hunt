@@ -652,7 +652,7 @@ MonoBehaviour:
   currentMoveRange: 0
   moveRange: 2
   damage: 2
-  patrolRange: 10
+  patrolRange: 6
   enemy: 1
   gridPos: {x: 0, y: 0}
   attacked: 0

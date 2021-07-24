@@ -9,6 +9,8 @@ public class DemonUnit : Unit
     public TurnState abilityState;
     float HideTime;
     bool hide = true;
+    public TurnManager turnManager; //dodane
+
 
     protected override void UnitUpdate()
     {
@@ -34,5 +36,10 @@ public class DemonUnit : Unit
         hide = true;
         //ShowAbilityButton(false);
         abilityState.StartState();
+    }
+
+    private void OnDestroy()   //dodane
+    {
+        turnManager.currentNumberOfGods--;
     }
 }

@@ -21,6 +21,15 @@ public class TurnManager : MonoBehaviour
     bool Winn = false;
     public bool mouseOnUI = false;
 
+    // tu zaczynam zmiany
+    public int currentNumberOfGods = 3;
+    bool Loosee = false;
+    public GameObject winPanel;
+    public GameObject losePanel;
+
+
+
+
     private void Start()
     {
         currentMana = maxMana;
@@ -29,8 +38,15 @@ public class TurnManager : MonoBehaviour
 
     void Update()
     {
-        if (Winn)
+
+        if (Winn||Loosee) // dodany condition OR
             return;
+
+        if (currentNumberOfGods <= 0) //dodany warunek
+        {
+            LOSE();
+            return;
+        }
 
         currentState.UpdateState();
         
@@ -87,7 +103,20 @@ public class TurnManager : MonoBehaviour
         Winn = true;
         currentState.EndState();
         currentState = null;
+        // odtad wprowadzam zmiany
+
+        winPanel.SetActive(true);
+
     }
+
+    public void LOSE() // cala nowa komenda
+    {
+        Loosee = true;
+        currentState.EndState();
+        currentState = null;
+        losePanel.SetActive(true);
+    }
+
 
     public void MouseOnUI(bool t)
     {

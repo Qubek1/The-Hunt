@@ -20,7 +20,7 @@ public class Opowiesc : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKey(KeyCode.Mouse0))
         {
             SetMusicPlayerActive();
             SelfDeactive();

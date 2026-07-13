@@ -6,6 +6,5 @@ Turn base, tactical game made in a week at [PolskiGamedev.pl: Game Jam](https://
 
 link to our teams entry: https://gamejam.polskigamedev.pl/gry/the-hunt-966/
 
+https://github.com/user-attachments/assets/49c02c46-12b0-4f06-807f-165952ef3321
 
-
-https://github.com/user-attachments/assets/c624418d-c85b-43f4-bc6e-7555ca55721e
